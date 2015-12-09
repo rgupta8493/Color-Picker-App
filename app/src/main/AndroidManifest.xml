@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.color.Gradients" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:authorities="color.colortable"
+            android:name="id.color.Gradients.ColorProvider" />
+
+        <activity
+            android:name="id.color.Gradients.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="id.color.Gradients.IdentifyColor"
+            >
+        </activity>
+        <activity
+            android:name="id.color.Gradients.ColorExplorer"
+            >
+        </activity>
+    </application>
+
+</manifest>
